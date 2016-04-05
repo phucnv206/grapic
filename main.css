@@ -1,0 +1,112 @@
+@font-face {
+    font-family: normalFont;
+    src: url(helvetica-neue-light.otf);
+}
+
+@font-face {
+    font-family: boldFont;
+    src: url(helvetica-neue-bold.ttf);
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    font-family: normalFont;
+    color: #001a25;
+    font-size: 18px;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+b,
+strong {
+    font-family: boldFont;
+}
+
+#bg-slider {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+#bg-slider .carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+
+#bg-slider .carousel-inner .item:nth-child(1) {
+    background: transparent url('slide.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100%;
+}
+
+#main {
+    position: relative;
+    height: 100%;
+}
+
+#main-bg {
+    position: absolute;
+    border-bottom: rgba(255, 221, 0, .9) solid 700px;
+    width: 100%;
+    z-index: -1;
+}
+
+#logo {
+    background: transparent url('logo.png');
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+}
+
+#content {
+    padding: 40px 70px;
+}
+
+.coming-soon {
+    font-size: 48px;
+    letter-spacing: 7px;
+}
+
+.skills {
+    margin: 30px 0;
+}
+
+.delay1 {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.delay2 {
+    -webkit-animation-delay: 1.3s;
+    animation-delay: 1.3s;
+}
+
+.delay3 {
+    -webkit-animation-delay: 1.7s;
+    animation-delay: 1.7s;
+}
+
+.delay4 {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+.durationHalf {
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+}
+
+@media (min-width: 768px) {
+    #main {
+        width: 60%;
+    }
+    #main-bg {
+        border-right: transparent solid 200px;
+    }
+}
