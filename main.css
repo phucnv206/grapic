@@ -11,7 +11,6 @@
 html,
 body {
     height: 100%;
-    overflow: hidden;
     font-family: normalFont;
     color: #001a25;
     font-size: 18px;
@@ -71,6 +70,7 @@ strong {
 .coming-soon {
     font-size: 48px;
     letter-spacing: 7px;
+    padding-left: 30px;
 }
 
 .skills {
@@ -103,6 +103,9 @@ strong {
 }
 
 @media (min-width: 768px) {
+    html, body {
+        overflow: hidden;
+    }
     #main {
         width: 60%;
     }
