@@ -38,10 +38,21 @@ strong {
     height: 100%;
 }
 
-#bg-slider .carousel-inner .item:nth-child(1) {
-    background: transparent url('slide.jpg') no-repeat center center;
+#bg-slider .carousel-inner .item {
     background-size: cover;
     height: 100%;
+}
+
+#bg-slider .carousel-inner .item:nth-child(1) {
+    background: transparent url('anh1.jpg') no-repeat center center;
+}
+
+#bg-slider .carousel-inner .item:nth-child(2) {
+    background: transparent url('anh2.jpg') no-repeat center center;
+}
+
+#bg-slider .carousel-inner .item:nth-child(3) {
+    background: transparent url('anh3.jpg') no-repeat center center;
 }
 
 #main {
@@ -103,7 +114,8 @@ strong {
 }
 
 @media (min-width: 768px) {
-    html, body {
+    html,
+    body {
         overflow: hidden;
     }
     #main {
